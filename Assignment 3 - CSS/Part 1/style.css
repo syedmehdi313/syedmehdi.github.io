@@ -1,0 +1,12 @@
+/* Part 1: Styling a bio page */
+
+h1 {
+  /* Make the main heading hotpink with a purple dotted underline */
+  color: hotpink;
+  border-bottom: 10px dotted purple;
+}
+
+h2 {
+  /* Make the subtitle italic */
+  font-style: italic;
+}
