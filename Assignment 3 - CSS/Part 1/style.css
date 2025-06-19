@@ -10,3 +10,15 @@ h2 {
   /* Make the subtitle italic */
   font-style: italic;
 }
+
+ul {
+  /* Style the contact list background, border, and padding */
+  background-color: #eeeeee;
+  border: 5px solid purple;
+  padding: 10px;
+}
+
+a:hover {
+  /* Links turn green on hover */
+  color: green;
+}
