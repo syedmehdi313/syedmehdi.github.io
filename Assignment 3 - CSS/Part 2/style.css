@@ -3,3 +3,14 @@ html {
 }
 
 /* Your CSS below here */
+
+div {
+  /* size & centering */
+  width: 12.5rem;           /* 200px ÷ 16 = 12.5rem */
+  height: 12.5rem;          /* square box */
+  margin: 2rem auto;        /* vertical spacing + center horizontally */
+
+  /* center text vertically & horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
