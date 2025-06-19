@@ -14,3 +14,13 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* typography */
+  font-size: 1.125rem;      /* ~18px; 18 ÷ 16 = 1.125rem */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+
+  /* base colors & border */
+  background-color: #e63946;
+  border: 1px solid #c5303e;
+  border-radius: 0.5rem;
