@@ -65,3 +65,24 @@ nav ul {
   justify-content: space-between;
   align-items: center;
 }
+
+/** 2. Wrap text around article image **/
+.feature {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+/** 3. Two-column flexible layout for article + aside **/
+main.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;                  /* spacing between columns */
+}
+
+main.grid article {
+  flex: 3 1 60%;              /* grow/shrink, base 60% */
+}
+
+main.grid aside {
+  flex: 1 1 30%;              /* base 30% */
+}
