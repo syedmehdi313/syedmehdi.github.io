@@ -106,3 +106,37 @@ a[href^="http"]::after {
   margin-left: 0.2rem;
   font-size: 0.8rem;
 }
+
+/* 6. Lists */
+ul, ol {
+  margin: 1.6rem 0;               /* same as paragraph spacing */
+  padding-left: 2rem;
+}
+
+ul li, ol li {
+  line-height: 1.6;               /* match body text */
+  margin-bottom: 0.5rem;
+}
+
+/* 7. Navigation menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 1rem;
+}
+
+nav a {
+  display: block;
+  font-size: 1.6rem;              /* 16px */
+  color: #a66;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background-color: #f5eaea;
+}
+
