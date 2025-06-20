@@ -79,3 +79,30 @@ section > h2 {
 section > h2 + p {
   text-indent: 20px;
 }
+
+/* 4. Links */
+a:link,
+a:visited {
+  color: #a66;                    /* matches header/footer border */
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #600;                    /* darker on hover */
+  text-decoration: none;
+  outline: none;
+}
+
+a:active {
+  color: #fff;
+  background-color: #a66;
+  text-decoration: none;
+}
+
+/* 5. External-link icon */
+a[href^="http"]::after {
+  content: '🔗';
+  margin-left: 0.2rem;
+  font-size: 0.8rem;
+}
