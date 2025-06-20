@@ -49,3 +49,19 @@ body {
   .feature {
       width: 200px;
   }
+
+  /* ———————————————————————————— */
+/* NEW LAYOUT RULES */
+
+/** 1. Nav items in a spaced row + sticky bar **/
+nav {
+  position: sticky;           /* stick at top */
+  top: 0;
+  z-index: 1000;              /* above content */
+}
+
+nav ul {
+  display: flex;              /* row layout */
+  justify-content: space-between;
+  align-items: center;
+}
