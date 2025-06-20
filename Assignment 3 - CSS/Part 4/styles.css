@@ -86,3 +86,10 @@ main.grid article {
 main.grid aside {
   flex: 1 1 30%;              /* base 30% */
 }
+
+/** 4. Photos as a 2-column grid **/
+.photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1px;
+}
