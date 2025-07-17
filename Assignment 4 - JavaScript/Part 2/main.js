@@ -37,3 +37,18 @@ imageFiles.forEach(fileName => {
     displayedImg.setAttribute('alt', alt);
   });
 });
+
+// ----------------------------------------------------------------------
+// Darken / Lighten toggle
+btn.addEventListener('click', () => {
+  const currentClass = btn.getAttribute('class'); // "dark" or "light"
+  if (currentClass === 'dark') {
+    btn.setAttribute('class', 'light');
+    btn.textContent = 'Lighten';
+    overlay.style.backgroundColor = 'rgb(0 0 0 / 50%)';
+  } else {
+    btn.setAttribute('class', 'dark');
+    btn.textContent = 'Darken';
+    overlay.style.backgroundColor = 'rgb(0 0 0 / 0%)';
+  }
+});
