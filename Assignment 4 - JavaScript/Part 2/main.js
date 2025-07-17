@@ -20,3 +20,20 @@ const imageAlts = {
   'pic4.jpg': 'Section of wall from a pharaoh\'s tomb',
   'pic5.jpg': 'Large butterfly on a green leaf'
 };
+
+// ----------------------------------------------------------------------
+// Build the thumbnail bar
+imageFiles.forEach(fileName => {
+  const newImage = document.createElement('img');
+  const src = `images/${fileName}`;
+  const alt = imageAlts[fileName] || '';
+  newImage.setAttribute('src', src);
+  newImage.setAttribute('alt', alt);
+  thumbBar.appendChild(newImage);
+
+  // When a thumb is clicked, update the main image & alt text
+  newImage.addEventListener('click', () => {
+    displayedImg.setAttribute('src', src);
+    displayedImg.setAttribute('alt', alt);
+  });
+});
