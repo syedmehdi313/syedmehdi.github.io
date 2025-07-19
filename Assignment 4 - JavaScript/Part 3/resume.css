@@ -53,3 +53,33 @@ body.is-loading{overflow:hidden}
 .social-nav img{width:22px;height:22px;filter:grayscale(1) opacity(.8);transition:.2s}
 .social-nav a:hover{background:var(--clr-accent)}
 .social-nav a:hover img{filter:none;opacity:1}
+
+/* ===== resume grid & sections ===== */
+.resume-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:3rem;padding:3rem;max-width:1200px;margin:0 auto}
+.resume-section{background:var(--clr-bg-alt);border:1px solid var(--clr-border);padding:2rem;border-radius:1rem;transition:background .3s}
+.resume-section:hover{background:rgba(255,51,102,.06)}
+.resume-section h2{font-size:2.4rem;color:var(--clr-accent-dark);border-bottom:2px solid var(--clr-accent);padding-bottom:.5rem;margin-bottom:1rem}
+
+/* ===== work‑experience accordion ===== */
+.exp-item+.exp-item{margin-top:1.5rem}
+.exp-toggle{
+  all:unset;width:100%;cursor:pointer;padding:1rem;font-size:1.6rem;
+  display:grid;grid-template-columns:1fr auto auto;gap:1rem;align-items:center;
+  border:2px solid var(--clr-accent-dark);border-radius:6px;background:var(--clr-bg-alt);transition:.2s
+}
+.exp-toggle:hover{background:var(--clr-accent);color:#fff}
+.exp-content{padding:0 1rem;max-height:0;overflow:hidden;opacity:0;transition:max-height .4s,opacity .4s}
+.exp-content.open{max-height:600px;opacity:1}
+.exp-toggle[aria-expanded="true"] + .exp-content{max-height:600px;opacity:1}
+
+/* ===== skill bar hover fill ===== */
+.skill-list{list-style:none;margin:0;padding:0}
+.skill-label{display:inline-block;width:130px}
+.skill-bar{--fill:0%;display:inline-block;width:120px;height:8px;border-radius:4px;background:#ccc;position:relative;vertical-align:middle;overflow:hidden}
+.skill-bar::before{content:'';position:absolute;inset:0;width:var(--fill);background:var(--clr-accent);transition:width .4s}
+
+/* ===== small screens ===== */
+@media(max-width:600px){
+  .intro{align-items:center;text-align:center}
+  .social-nav ul{justify-content:center}
+}
