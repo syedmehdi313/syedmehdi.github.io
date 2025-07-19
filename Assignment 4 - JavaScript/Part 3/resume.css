@@ -28,3 +28,28 @@ body.is-loading{overflow:hidden}
 #loader{position:fixed;inset:0;display:grid;place-items:center;background:var(--clr-bg-alt);z-index:1000;transition:opacity .5s}
 #loader.fade-out{opacity:0;pointer-events:none}
 .spinner{width:40px;height:40px;border:4px solid var(--clr-border);border-top-color:var(--clr-accent);border-radius:50%;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+
+
+/* ===== header ===== */
+.site-header{
+  background:var(--clr-bg-alt);border-bottom:4px solid var(--clr-accent);
+  padding:2.5rem 3rem;
+}
+.intro{display:flex;flex-direction:column;align-items:flex-start}
+.brand-logo{width:90px;height:auto;margin-bottom:.7rem}
+.intro h1{font-size:3rem;color:var(--clr-accent-dark)}
+.tagline{font-size:1.5rem;font-style:italic;margin:.4rem 0 1rem}
+#themeToggle{padding:.6rem 1.6rem;font-size:1.4rem;border:2px solid var(--clr-accent-dark);border-radius:999px;background:none;color:var(--clr-text);cursor:pointer;transition:.3s}
+#themeToggle:hover{background:var(--clr-accent);color:#fff}
+
+/* ===== social icons ===== */
+.social-title{font-size:1.8rem;font-weight:600;margin:1.4rem 0 .6rem}
+.social-nav ul{display:flex;gap:1rem;list-style:none;padding:0}
+.social-nav a{
+  display:grid;place-items:center;
+  width:40px;height:40px;border-radius:50%;
+  background:var(--clr-icon-bg);transition:.2s;
+}
+.social-nav img{width:22px;height:22px;filter:grayscale(1) opacity(.8);transition:.2s}
+.social-nav a:hover{background:var(--clr-accent)}
+.social-nav a:hover img{filter:none;opacity:1}
