@@ -48,3 +48,24 @@ document.querySelectorAll('.skill-bar').forEach(bar => {
   bar.addEventListener('mouseenter', () => bar.style.setProperty('--fill', pct + '%'));
   bar.addEventListener('mouseleave',  () => bar.style.setProperty('--fill', '0%'));
 });
+
+
+/* CITATIONS FOR resume.js
+
+Link: https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event?
+
+Code Used: js<br>window.addEventListener('load', () => { … });
+
+What the code does: Waits for the load event for example when it fires the whole page—including images, CSS, 
+fonts has to load before fading out the loader overlay.
+
+
+Link: https://developer.mozilla.org/en-US/docs/Web/API/Element/nextElementSibling?
+
+Code Used: js<br>const panel = btn.nextElementSibling;
+
+What the code does: Retrieves the element immediately following each accordion button (the hidden content panel) with the nextElementSibling 
+DOM property so we can open/close it without extra IDs
+*/ 
+
+

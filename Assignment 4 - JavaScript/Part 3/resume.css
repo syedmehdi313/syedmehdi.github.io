@@ -83,3 +83,32 @@ body.is-loading{overflow:hidden}
   .intro{align-items:center;text-align:center}
   .social-nav ul{justify-content:center}
 }
+
+
+/* CITATIONS FOR resume.css 
+
+Link: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout?
+
+Code used: css<br>.resume-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+
+What the code does: Uses CSS Grid to create a responsive, multi‑column layout that automatically adapts to screen width.
+
+
+Link: https://www.w3schools.com/css/css3_variables.asp?
+
+Code used: css<br>:root{--clr‑bg:#fbf8f2; …
+
+What the code does: Declares CSS custom properties (variables) so colours can be switched once for light/dark themes 
+instead of copy‑pasting hex values everywhere
+
+
+Link: https://css-tricks.com/almanac/properties/p/place-items/?
+
+Code used: css<br>.social-nav a{<br>  display:grid;<br>  place-items:center;<br>}
+
+What the code does: Turns each grey badge into a mini grid container so place‑items:center neatly centers the icon 
+both horizontally and vertically
+
+*/ 
+
+
