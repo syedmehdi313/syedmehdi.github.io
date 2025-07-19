@@ -1,0 +1,30 @@
+/* =====  colour palette  ===== */
+:root{
+  --clr-bg:#fbf8f2;
+  --clr-bg-alt:#f9f7f1;
+  --clr-text:#222;
+  --clr-accent:#ff3366;
+  --clr-accent-dark:#c3254f;
+  --clr-border:#e9e6dd;
+  --clr-icon-bg:#d9d7d1;        /* grey badge colour */
+}
+body.theme-dark{
+  --clr-bg:#1d1d1d;
+  --clr-bg-alt:#272727;
+  --clr-text:#eee;
+  --clr-accent:#ff6699;
+  --clr-accent-dark:#ff4da6;
+  --clr-border:#444;
+  --clr-icon-bg:#3b3b3b;
+}
+
+/* ===== reset & base ===== */
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:62.5%}
+body{font:1.6rem/1.6 "Segoe UI",sans-serif;color:var(--clr-text);background:var(--clr-bg);transition:.3s}
+
+/* ===== loader ===== */
+body.is-loading{overflow:hidden}
+#loader{position:fixed;inset:0;display:grid;place-items:center;background:var(--clr-bg-alt);z-index:1000;transition:opacity .5s}
+#loader.fade-out{opacity:0;pointer-events:none}
+.spinner{width:40px;height:40px;border:4px solid var(--clr-border);border-top-color:var(--clr-accent);border-radius:50%;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
